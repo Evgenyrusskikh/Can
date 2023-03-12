@@ -1,0 +1,31 @@
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    background: #ffffff;
+    display: flex;
+    height: 4px;
+    margin: 0px auto;
+    bottom: 0;
+    width: 60px;
+    justify-content: space-between;
+    @media (max-width: $mw3){
+        width: 53px;
+    }
+    
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0;
+    height: 4px;
+    
+    
+}
+.swiper-button-next, .swiper-button-prev{
+   right: 0;
+   width: 10px;
+   
+   
+   
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: 0;
+    
+    
+}

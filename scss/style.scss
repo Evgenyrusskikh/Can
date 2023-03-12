@@ -1,0 +1,104 @@
+
+@import url(https://fonts.googleapis.com/css?family=Saira:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,);
+@font-face {
+	font-family: 'Gilroy Regular'; 
+	src: url("./fonts/GilroyRegular.ttf");
+}
+//Шрифт по умолчанию
+$fontFamily: "Saira";
+
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1805;
+$md1: $maxWidthContainer + 12;
+$md2: 1440.98;
+$md3: 1090.98;
+$md4: 520.98;
+$mw1: $md1 + px;
+$mw2: $md2 + px;
+$mw3: $md3 + px;
+$mw4: $md4 + px;
+
+@import "null";
+.body {
+   &.lock {
+    overflow: hidden;
+    
+  }
+}
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    //&.loaded{
+    //}
+  }
+._container {
+     max-width: $maxWidthContainer + px;
+     margin: 0 auto;
+     @media (max-width: $mw1){
+         max-width: 970 px;
+     }
+     @media (max-width: $mw2){
+        max-width: 1440 px;
+     }
+     @media (max-width: $mw3){
+        max-width: none;
+        
+    }
+     }
+     @import "header";
+     @import "home";
+     @import "foot";
+     @import "article";
+
+footer{
+  flex-shrink: 0;
+}
+body.lock{
+  overflow: hidden;
+}
+
+h1{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 70px;
+  font-weight: 300;
+  
+  @media (max-width: $mw3){
+    font-size: 35px;
+  }
+}  
+p{
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  @media (max-width: $mw3){
+    font-size: 16px;  
+  }
+}
+
+h2{
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 45px;
+  @media (max-width: $mw3){
+    font-size: 35px;
+    
+  }
+}
+h3{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45px;
+
+}
